@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5ace7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor de productos */
+#root {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Tarjeta de producto */
+.producto {
+    background: #b0a2ee;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+}
+
+/* Efecto hover */
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del producto */
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Título del producto */
+.producto h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Precio */
+.producto p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Destacar precio */
+.producto p:nth-of-type(1) {
+    font-weight: bold;
+    color: #e44d26;
+}
